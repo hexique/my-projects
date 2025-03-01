@@ -14,11 +14,11 @@ const sites = [
     } , {name: "Stopwatch",
     url: "https://hexique.github.io/stopwatch/",
     date: "13.02.2025",
-    desc: "A simple casino game",
+    desc: "A stopwatch with pause, stop, reset and marks",
     } , {name: "Random Telegram message",
     url: "https://hexique.github.io/randomtg/",
     date: "13.02.2025",
-    desc: "A simple casino game",
+    desc: "A random telegram message generator",
     } , {name: "Random Telegram message",
     url: "https://hexique.github.io/randomtg/",
     date: "13.02.2025",
@@ -53,8 +53,9 @@ const sites = [
 for(let i=0; i<sites.length; i++){
     const title = document.createElement("h3");
     const desc = document.createElement("p");
-    title.innerHTML = `<a href=${sites[i].url} target="_blank">${sites[i].name}</a> [${sites[i].date}]`;
-    desc.textContent = sites[i].desc;
+
+    title.innerHTML = `<a href=${sites[i].url} target="_blank">${sites[i].name}</a> <a class="date" href=https://github.com/hexique/${sites[i].url.split('/')[3]} target="_blank">[${sites[i].date}]</a>`;
+    desc.innerHTML = `<p>${sites[i].desc}</p></a>`;
     document.body.append(title);
     document.body.append(desc);
 }

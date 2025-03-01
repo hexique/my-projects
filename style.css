@@ -2,6 +2,15 @@ body{
   background-color: #1e1e1e;
 }
 
+a{
+  color: #ffff;
+}
+
+.date{
+  color: #b0b0b0;
+  text-decoration-color: #b0b0b0;;
+}
+
 p{
   color: #808080;
   font-family: Arial;
@@ -21,8 +30,4 @@ h3{
   font-family: Arial;
   font-size: 2em;
   margin-bottom: 10px;
-}
-
-a{
-  color: #ffff;
 }
