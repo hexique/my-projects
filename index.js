@@ -43,6 +43,10 @@ const sites = [
     url: "https://hexique.github.io/my-projects/",
     date: "21.02.2025",
     desc: "The site you are on right now",
+    } , {name: "YouPipe",
+    url: "https://hexique.github.io/youpipe/",
+    date: "14.03.2025",
+    desc: "YouTube clone, you can watch uploaded videos and upload your own.",
     }
 ];
 
