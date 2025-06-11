@@ -47,6 +47,10 @@ const sites = [
     url: "https://hexique.github.io/youpipe/",
     date: "14.03.2025",
     desc: "YouTube clone, you can watch uploaded videos and upload your own.",
+    } , {name: "Time progress",
+    url: "https://hexique.github.io/liununu/",
+    date: "31.03.2025",
+    desc: "Progress of time in percentages with converter",
     }
 ];
 
