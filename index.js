@@ -15,11 +15,7 @@ const sites = [
     url: "https://hexique.github.io/stopwatch/",
     date: "13.02.2025",
     desc: "A stopwatch with pause, stop, reset and marks",
-    } , {name: "Random Telegram message",
-    url: "https://hexique.github.io/randomtg/",
-    date: "13.02.2025",
-    desc: "A random telegram message generator",
-    } , {name: "Random Telegram message",
+    }, {name: "Random Telegram message",
     url: "https://hexique.github.io/randomtg/",
     date: "13.02.2025",
     desc: "Gives you a link to random message on Telegram",
@@ -47,17 +43,39 @@ const sites = [
     url: "https://hexique.github.io/my-projects/",
     date: "21.02.2025",
     desc: "The site you are on right now",
+    } , {name: "YouPipe",
+    url: "https://hexique.github.io/youpipe/",
+    date: "14.03.2025",
+    desc: "YouTube clone, you can watch uploaded videos and upload your own.",
+    } , {name: "Time progress",
+    url: "https://hexique.github.io/liununu/",
+    date: "31.03.2025",
+    desc: "Progress of time in percentages with converter",
+    } , {name: "0chan",
+    url: "https://alt-hexi.github.io/0chan/",
+    date: "12.06.2025",
+    desc: "First work with databases. Anonymous messager",
+    } , {name: "GDLS",
+    url: "https://hexique.github.io/GDLS/",
+    date: "17.08.2025",
+    desc: "A site where you can explore 1.9 random levels in Geometry Dash",
     }
 ];
 
 for(let i=0; i<sites.length; i++){
+    const img = document.createElement("img");
     const title = document.createElement("h3");
     const desc = document.createElement("p");
 
     title.innerHTML = `<a href=${sites[i].url} target="_blank">${sites[i].name}</a> <a class="date" href=https://github.com/hexique/${sites[i].url.split('/')[3]} target="_blank">[${sites[i].date}]</a>`;
     desc.innerHTML = `<p>${sites[i].desc}</p></a>`;
+    img.src = `img/${i}.png`;
+    img.alt = `Image №${i}: ${sites[i].name}`;
+    img.height = `250`
+
     document.body.append(title);
     document.body.append(desc);
+    document.body.append(img);
 }
 /* <h3><a href="https://hexique.github.io/unix2time/">Unix 2 time</a> [10.02.2025]</h3>
 <p>Converter from unix</p> */
