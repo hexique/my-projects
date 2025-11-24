@@ -1,124 +1,38 @@
 body{
   background-color: #1e1e1e;
-}
-
-.centered{
   text-align: center;
 }
 
-.footer-link{
-  font-size: 0.9em;
-}
-
-p, a, b, strong, h1, h2, h3{
-  font-family: Arial;
-  word-break: break-all;
-}
-
-.red{
-  color: hsl(0, 50%, 45%);
-}
-
-.green{
-  color: hsl(120, 50%, 45%);
-}
-
-.gray{
-  color: #808080;
-}
-
-a, b, h1, h2, h3{
+a{
   color: #ffff;
+}
+
+.date{
+  color: #b0b0b0;
+  text-decoration-color: #b0b0b0;;
 }
 
 p{
   color: #808080;
+  font-family: Arial;
   font-size: 1.2em;
   margin-bottom: 10px;
 }
 
 h1{
+  color: #ffff;
+  font-family: Arial;
   font-size: 3em;
   margin-bottom: 10px;
 }
 
 h3{
+  color: #b0b0b0;
+  font-family: Arial;
   font-size: 2em;
   margin-bottom: 10px;
 }
 
-input{
-  background-color: #1e1e1e;
-  color: #ffff;
-  border: solid;
-  border-width: 2.5px;
-  border-radius: 5px;
-  font-family: Arial;
-  font-size: 1em;
-  width: 200px;
-
-}
-
-button{
-  margin: 15px;
-  color: #ffffff;
-  background-color: #1b1b1b;
-  border: #ffffff solid 2.5px;
-  font-size: 1em;
-  padding: 8px 8px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
-}
-
-button:hover{
-  color: #1b1b1b;
-  background-color: #ffff;
-  border-color: #ffff;
-}
-
-/* footer */
-/* from hexique.github.io/gdls */
-
-body {
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-main {
-  flex: 1;
-  padding-bottom: 80px;
-}
-
-footer {
-  background-color: rgba(0, 0, 0, 0.15);
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: 100;
-  box-sizing: border-box;
-}
-
-footer {
-  background-color: rgba(0, 0, 0, 0.15);
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-  width: 100%;
-  margin-top: auto;
-  box-sizing: border-box;
-  margin-top: auto;
-  position: static;
-}
-
-ul, ol, li {
-  color: white
+img{
+  box-shadow: 0px 0px 15px hsla(0, 0%, 0%, 0.5);
 }
