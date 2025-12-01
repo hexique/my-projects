@@ -63,6 +63,10 @@ const sites = [
     url: "https://hexique.github.io/strings/",
     date: "30.09.2025",
     desc: "Miscellaneous string converters.",
+    } , {name: "Zina",
+    url: "https://hexique.github.io/Zina/",
+    date: "16.11.2025",
+    desc: "Fake dating site to prank my classmate.",
     }
 ];
 
