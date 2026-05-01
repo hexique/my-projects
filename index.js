@@ -67,26 +67,35 @@ const sites = [
     url: "https://hexique.github.io/Zina/",
     date: "16.11.2025",
     desc: "Fake dating site to prank my classmate.",
+    } , {name: "Breathe if prime",
+    url: "https://hexique.github.io/Breathe-if-prime/",
+    date: "24.12.2025",
+    desc: "A game, where you can breathe only when timer shows prime number.",
+    } , {name: "1,952,184 converter",
+    url: "https://hexique.github.io/1952184-converter/",
+    date: "26.03.2026",
+    desc: "Time converters for one of my streams.",
     }
 ];
 
 for(let i=0; i<sites.length; i++){
-    const img = document.createElement("img");
-    const title = document.createElement("h3");
-    const desc = document.createElement("p");
+    const main = document.getElementById("main")
 
-    title.innerHTML = `<a href=${sites[i].url} target="_blank">${sites[i].name}</a> <a class="date" href=https://github.com/hexique/${sites[i].url.split('/')[3]} target="_blank">[${sites[i].date}]</a>`;
+    if(i != 0 && parseInt(sites[i].date.split(".")[2]) > parseInt(sites[i-1].date.split(".")[2])){
+        main.innerHTML += `<h1 class="year">${sites[i].date.split(".")[2]}</h1>`
+    }
+
+    main.innerHTML += `<h3><a href=${sites[i].url} target="_blank">${sites[i].name}</a> <a class="date" href=https://github.com/hexique/${sites[i].url.split('/')[3]} target="_blank">[${sites[i].date}]</a></h3>`;
+    main.innerHTML += `<p>${sites[i].desc}</p></a>`;
+    main.innerHTML += `<img src="img/${i}.png" alt="Image №${i}: ${sites[i].name}" height="250"><br><br><br><br><br>`;
+
+
+}
+/*  title.innerHTML = `<a href=${sites[i].url} target="_blank">${sites[i].name}</a> <a class="date" href=https://github.com/hexique/${sites[i].url.split('/')[3]} target="_blank">[${sites[i].date}]</a>`;
     desc.innerHTML = `<p>${sites[i].desc}</p></a>`;
     img.src = `img/${i}.png`;
     img.alt = `Image №${i}: ${sites[i].name}`;
-    img.height = `250`
-
-    document.body.append(title);
-    document.body.append(desc);
-    document.body.append(img);
-}
-/* <h3><a href="https://hexique.github.io/unix2time/">Unix 2 time</a> [10.02.2025]</h3>
-<p>Converter from unix</p> */
+    img.height = `250` */
 
 
 
